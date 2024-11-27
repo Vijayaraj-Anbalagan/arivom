@@ -91,9 +91,11 @@ export default function AboutPage() {
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-5">
-              {values.map((value) => (
-                <ValueCard key={value.title} {...value} />
-              ))}
+                {values.map((value) => (
+                <div key={value.title} className="transition-transform transform hover:scale-105">
+                  <ValueCard {...value} />
+                </div>
+                ))}
             </dl>
           </div>
         </div>
@@ -126,8 +128,8 @@ export default function AboutPage() {
                 </blockquote>
                 <figcaption className="mt-10">
                   <Image
-                    className="mx-auto h-16 w-16 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    className="mx-auto h-20 w-20 rounded-full"
+                    src="https://media.istockphoto.com/id/1029797636/photo/school-girl-stock-image.jpg?s=612x612&w=0&k=20&c=vTO9wMeghrSTzTrKNvv_vBmjF7yJMMPA-coFg3bab2w="
                     alt="Student portrait"
                     width={64}
                     height={64}

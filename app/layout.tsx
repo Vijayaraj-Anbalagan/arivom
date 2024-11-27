@@ -3,6 +3,18 @@ import { Poppins, Noto_Serif_Tamil } from 'next/font/google';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { ThemeProvider } from '@/components/theme-provider';
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
+
+gsap.registerPlugin(ScrollToPlugin);
+
+
+if (typeof window !== 'undefined') {
+  gsap.to(window, {
+    duration: 1.5, // Increase to 1.5 or 2 for smoother scrolling
+    ease: 'power1.inOut', // Use a smoother easing function
+  });
+}
 
 const poppins = Poppins({
   subsets: ['latin'],

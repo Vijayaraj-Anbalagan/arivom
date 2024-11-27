@@ -21,42 +21,42 @@ const galleryItems = [
     category: "workshops",
     title: "Digital Literacy Workshop",
     description: "Students learning computer basics - 2023",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://theunitedindian.com/images/DE.jpg",
   },
   {
     id: 2,
     category: "events",
     title: "Annual Day Celebration",
     description: "Celebrating student achievements - 2024",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://www.thepresidiumschool.com/news_image/5001%20(14).jpg",
   },
   {
     id: 3,
     category: "stories",
     title: "Success Story: Priya",
     description: "From scholarship recipient to software engineer",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://media.istockphoto.com/id/1029797636/photo/school-girl-stock-image.jpg?s=612x612&w=0&k=20&c=vTO9wMeghrSTzTrKNvv_vBmjF7yJMMPA-coFg3bab2w=",
   },
   {
     id: 4,
     category: "workshops",
     title: "Career Guidance Session",
     description: "Industry experts mentoring students - 2023",
-    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://thenest.school/wp-content/uploads/2023/11/IMG-20231110-WA0055-e1699702424521.jpg",
   },
   {
     id: 5,
     category: "events",
     title: "Community Outreach",
     description: "Meeting with parents and community leaders",
-    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://www.artindiafoundation.org/images/ka-165.webp",
   },
   {
     id: 6,
     category: "stories",
     title: "Success Story: Karthik",
     description: "First-generation college graduate",
-    image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://img.freepik.com/free-photo/handsome-young-indian-student-man-holding-notebooks-while-standing-street_231208-2773.jpg?t=st=1732690743~exp=1732694343~hmac=0235290ee8344ec6208681bbff28eeb64de44be26f4b5d944b91c6113622d828&w=996",
   },
 ];
 
@@ -104,17 +104,17 @@ export default function GalleryPage() {
           </div>
           <div className="mx-auto mt-16 max-w-4xl overflow-hidden rounded-xl bg-gray-900 shadow-xl">
             <div className="relative aspect-video">
-              <Image
-                src="https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
-                alt="Video thumbnail"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button className="rounded-full bg-white/90 p-4 text-gray-900 shadow-lg transition-transform hover:scale-110">
-                  <Play className="h-8 w-8" />
-                </button>
-              </div>
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/gG_xbF8SIVU?si=jBwLSdxMm8T6vzC0"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              
+              
             </div>
           </div>
         </div>

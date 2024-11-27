@@ -34,7 +34,7 @@ export function GalleryGrid({ items }: GalleryGridProps) {
             className="group relative cursor-pointer overflow-hidden rounded-xl bg-gray-100"
             onClick={() => setSelectedItem(item)}
           >
-            <div className="aspect-[4/3] w-full">
+            <div className="aspect-[4/3] w-full  image-wrapper shine">
               <Image
                 src={item.image}
                 alt={item.title}
@@ -57,17 +57,17 @@ export function GalleryGrid({ items }: GalleryGridProps) {
 
       <Dialog open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
         {selectedItem && (
-          <DialogContent className="max-w-4xl">
+          <DialogContent className="max-w-3xl">
             <DialogHeader>
               <DialogTitle>{selectedItem.title}</DialogTitle>
               <DialogDescription>{selectedItem.description}</DialogDescription>
             </DialogHeader>
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
               <Image
-                src={selectedItem.image}
-                alt={selectedItem.title}
-                fill
-                className="object-cover"
+          src={selectedItem.image}
+          alt={selectedItem.title}
+          fill
+          className="object-cover"
               />
             </div>
           </DialogContent>

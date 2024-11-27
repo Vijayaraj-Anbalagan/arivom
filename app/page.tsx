@@ -8,6 +8,7 @@ import {
   GraduationCap,
   ArrowRight,
 } from "lucide-react";
+import NumberTicker from "@/components/ui/number-ticker";
 
 const programs = [
   {
@@ -37,9 +38,9 @@ const programs = [
 ];
 
 const stats = [
-  { id: 1, name: "Students Benefited", value: "500+" },
-  { id: 2, name: "Scholarships Awarded", value: "100+" },
-  { id: 3, name: "Workshops Conducted", value: "20+" },
+  { id: 1, name: "Students Benefited", value: 500 },
+  { id: 2, name: "Scholarships Awarded", value: 100 },
+  { id: 3, name: "Workshops Conducted", value: 20 },
 ];
 
 export default function Home() {
@@ -58,17 +59,21 @@ export default function Home() {
               for underprivileged children.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button size="lg" asChild>
+                <Button
+                size="lg"
+                className="transition-transform transform hover:scale-105"
+                asChild
+                >
                 <Link href="/about">Learn More</Link>
-              </Button>
-              <Button
+                </Button>
+                <Button
                 size="lg"
                 variant="secondary"
-                className="bg-secondary text-white hover:bg-secondary/90"
+                className="bg-secondary text-white hover:bg-secondary/90 transition-transform transform hover:scale-105"
                 asChild
-              >
+                >
                 <Link href="/contact">Donate Now</Link>
-              </Button>
+                </Button>
             </div>
           </div>
         </div>
@@ -89,24 +94,27 @@ export default function Home() {
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
               {programs.map((program) => (
-                <div key={program.title} className="flex flex-col">
+                <div
+                  key={program.title}
+                  className="flex flex-col transition-transform transform hover:scale-105"
+                >
                   <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                    <program.icon
-                      className="h-5 w-5 flex-none text-primary"
-                      aria-hidden="true"
-                    />
-                    {program.title}
+                  <program.icon
+                    className="h-5 w-5 flex-none text-primary"
+                    aria-hidden="true"
+                  />
+                  {program.title}
                   </dt>
                   <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                    <p className="flex-auto">{program.description}</p>
-                    <p className="mt-6">
-                      <Link
-                        href="/programs"
-                        className="text-sm font-semibold leading-6 text-primary"
-                      >
-                        Learn more <span aria-hidden="true">→</span>
-                      </Link>
-                    </p>
+                  <p className="flex-auto">{program.description}</p>
+                  <p className="mt-6">
+                    <Link
+                    href="/programs"
+                    className="text-sm font-semibold leading-6 text-primary"
+                    >
+                    Learn more <span aria-hidden="true">→</span>
+                    </Link>
+                  </p>
                   </dd>
                 </div>
               ))}
@@ -129,14 +137,14 @@ export default function Home() {
             </div>
             <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-3">
               {stats.map((stat) => (
-                <div key={stat.id} className="flex flex-col bg-white/5 p-8">
-                  <dt className="text-sm font-semibold leading-6 text-white/90">
-                    {stat.name}
-                  </dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-white">
-                    {stat.value}
-                  </dd>
-                </div>
+              <div key={stat.id} className="flex flex-col bg-white/5 p-8 transition-transform transform hover:scale-105">
+                <dt className="text-sm font-semibold leading-6 text-white/90">
+                {stat.name}
+                </dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-white">
+                <NumberTicker value={stat.value} />
+                </dd>
+              </div>
               ))}
             </dl>
           </div>
@@ -157,9 +165,9 @@ export default function Home() {
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {/* Placeholder for dynamic news/events content */}
             <article className="flex flex-col items-start">
-              <div className="relative w-full">
+              <div className="relative w-full image-wrapper shine">
                 <Image
-                  src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  src="https://www.thepresidiumschool.com/news_image/5001%20(14).jpg"
                   alt="Students studying"
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                   width={800}
@@ -188,9 +196,9 @@ export default function Home() {
               </div>
             </article>
             <article className="flex flex-col items-start">
-              <div className="relative w-full">
+              <div className="relative w-full image-wrapper shine">
                 <Image
-                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
+                  src="https://thenest.school/wp-content/uploads/2023/11/IMG-20231110-WA0055-e1699702424521.jpg"
                   alt="Students at a workshop"
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                   width={800}
@@ -219,9 +227,9 @@ export default function Home() {
               </div>
             </article>
             <article className="flex flex-col items-start">
-              <div className="relative w-full">
+              <div className="relative w-full image-wrapper shine">
                 <Image
-                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
+                  src="https://www.artindiafoundation.org/images/ka-165.webp"
                   alt="Students at a workshop"
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                   width={800}

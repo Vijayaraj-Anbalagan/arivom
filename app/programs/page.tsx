@@ -10,28 +10,28 @@ const programs = [
     description: "Financial assistance to support underprivileged students pursuing school and higher education.",
     impact: "100+ scholarships awarded",
     icon: GraduationCap,
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://media.istockphoto.com/id/1461631902/photo/group-of-college-students-discussing-about-project-with-team-leader-from-laptop-at-college.jpg?s=612x612&w=0&k=20&c=6KPm5e4SPQ2r0iHWOU0ujPn3bdCy60QfULFNCeSpEbs=",
   },
   {
     title: "Community Tutoring",
     description: "Free evening classes for schoolchildren to improve academic performance and build confidence.",
     impact: "300+ children enrolled",
     icon: Users,
-    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://c9.shauryasoft.com/media/bny-wcp-2411131007-0812187636-3.jpg",
   },
   {
     title: "Digital Literacy",
     description: "Skill-building workshops focusing on basic computer literacy and digital tools for students and adults.",
     impact: "20+ workshops annually",
     icon: Monitor,
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://theunitedindian.com/images/DE.jpg",
   },
   {
     title: "Youth Skill Development",
     description: "Vocational training and job-oriented skills for young adults to improve employability.",
     impact: "50+ job placements",
     icon: BookOpen,
-    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: "https://srdsindia.org/wp-content/uploads/2021/09/teaching.jpeg",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function ProgramsPage() {
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
             <div className="relative lg:order-2">
               <Image
-                src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
+                src="https://img.freepik.com/free-photo/handsome-young-indian-student-man-holding-notebooks-while-standing-street_231208-2773.jpg?t=st=1732690743~exp=1732694343~hmac=0235290ee8344ec6208681bbff28eeb64de44be26f4b5d944b91c6113622d828&w=996"
                 alt="Students celebrating graduation"
                 width={800}
                 height={600}
@@ -169,18 +169,24 @@ export default function ProgramsPage() {
               Your support can help us expand our programs and reach more students
               in need. Together, we can create lasting change through education.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-6">
               <Button
-                size="lg"
-                className="bg-secondary text-white hover:bg-secondary/90"
-                asChild
+              size="lg"
+              className="bg-secondary text-white hover:bg-secondary/90 hover:shadow-lg transition-shadow duration-300"
+              asChild
               >
-                <Link href="/contact">
-                  Support a Program <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+              <Link href="/contact">
+                Support a Program <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/contact">Become a Volunteer</Link>
+              <Button
+              size="lg"
+              variant="outline"
+              className="hover:bg-gray-200 hover:shadow-lg transition-shadow duration-300"
+              asChild
+              >
+              <Link href="/contact">Become a Volunteer<ArrowRight className="ml-2 h-4 w-4" /> 
+              </Link>
               </Button>
             </div>
           </div>

@@ -6,7 +6,7 @@ const team = [
     name: "Dr. Rajesh Kumar",
     role: "Founder & Chairman",
     imageUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "https://static9.depositphotos.com/1005893/1105/i/450/depositphotos_11050974-stock-photo-indian-businessman.jpg",
     bio: "Educational visionary with 20+ years of experience in academia.",
     linkedin: "#",
   },
@@ -14,7 +14,7 @@ const team = [
     name: "Priya Sharma",
     role: "Program Director",
     imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "https://t3.ftcdn.net/jpg/06/60/16/72/360_F_660167287_gzYr2ejTMDX1dCyj96YNFb7FiwJZPrvK.jpg",
     bio: "Passionate about creating impactful educational programs.",
     linkedin: "#",
   },
@@ -22,7 +22,7 @@ const team = [
     name: "Arun Prakash",
     role: "Community Outreach",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "https://media.istockphoto.com/id/1363118407/photo/portrait-of-young-businessman.jpg?s=612x612&w=0&k=20&c=e9xjo1AdlIbr7ttZe3iBG3CBWKUBwdTMLkPus9DxA_s=",
     bio: "Building bridges between communities and educational opportunities.",
     linkedin: "#",
   },
@@ -47,12 +47,12 @@ export function TeamGrid() {
           {team.map((person) => (
             <li key={person.name}>
               <div className="group relative">
-                <div className="relative h-48 w-48 mx-auto overflow-hidden rounded-full bg-gray-100">
+                <div className="relative h-48 w-48 mx-auto overflow-hidden rounded-full bg-gray-100 group-hover:scale-105 transition-transform duration-300">
                   <Image
-                    className="object-cover"
-                    src={person.imageUrl}
-                    alt={person.name}
-                    fill
+                  className="object-cover"
+                  src={person.imageUrl}
+                  alt={person.name}
+                  fill
                   />
                 </div>
                 <div className="mt-6 text-center">
