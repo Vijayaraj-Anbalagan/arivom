@@ -24,7 +24,7 @@ export function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <span className="font-poppins text-2xl font-bold text-primary">
-                Arivom
+                Ganga Shanmuga
               </span>
             </Link>
           </div>

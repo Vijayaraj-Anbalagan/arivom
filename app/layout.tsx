@@ -20,18 +20,21 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-poppins',
+  display: 'swap',
 });
 
 const notoSerifTamil = Noto_Serif_Tamil({
   subsets: ['tamil'],
   weight: ['400', '700'],
   variable: '--font-noto-serif-tamil',
+  display: 'swap',
 });
 
 export const metadata = {
-  title: 'Arivom Educational Trust',
-  description: 'Empowering Education, Transforming Lives',
+  title: 'Ganga Shanmuga Social and Educational Trust',
+  description: 'Empowering Communities Through Education and Transforming Lives',
 };
+
 
 export default function RootLayout({
   children,

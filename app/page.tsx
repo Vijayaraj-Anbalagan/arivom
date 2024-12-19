@@ -40,7 +40,7 @@ const programs = [
 const stats = [
   { id: 1, name: "Students Benefited", value: 500 },
   { id: 2, name: "Scholarships Awarded", value: 100 },
-  { id: 3, name: "Workshops Conducted", value: 20 },
+  { id: 3, name: "Programs Launched", value: 15 },
 ];
 
 export default function Home() {
@@ -51,29 +51,29 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="font-poppins text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Empowering Education,{" "}
-              <span className="text-primary">Transforming Lives</span>
+              Empowering Communities Through{" "}
+              <span className="text-primary">Education</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Join hands with Arivom Educational Trust to create a brighter future
-              for underprivileged children.
+              Join hands with Ganga Shanmuga Social and Educational Trust to
+              create a brighter future for underprivileged children.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button
+              <Button
                 size="lg"
                 className="transition-transform transform hover:scale-105"
                 asChild
-                >
+              >
                 <Link href="/about">Learn More</Link>
-                </Button>
-                <Button
+              </Button>
+              <Button
                 size="lg"
                 variant="secondary"
                 className="bg-secondary text-white hover:bg-secondary/90 transition-transform transform hover:scale-105"
                 asChild
-                >
+              >
                 <Link href="/contact">Donate Now</Link>
-                </Button>
+              </Button>
             </div>
           </div>
         </div>
@@ -87,8 +87,8 @@ export default function Home() {
               Our Initiatives
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Comprehensive programs designed to support education and skill
-              development.
+              Comprehensive programs designed to uplift communities and improve
+              access to education.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -99,22 +99,22 @@ export default function Home() {
                   className="flex flex-col transition-transform transform hover:scale-105"
                 >
                   <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <program.icon
-                    className="h-5 w-5 flex-none text-primary"
-                    aria-hidden="true"
-                  />
-                  {program.title}
+                    <program.icon
+                      className="h-5 w-5 flex-none text-primary"
+                      aria-hidden="true"
+                    />
+                    {program.title}
                   </dt>
                   <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">{program.description}</p>
-                  <p className="mt-6">
-                    <Link
-                    href="/programs"
-                    className="text-sm font-semibold leading-6 text-primary"
-                    >
-                    Learn more <span aria-hidden="true">→</span>
-                    </Link>
-                  </p>
+                    <p className="flex-auto">{program.description}</p>
+                    <p className="mt-6">
+                      <Link
+                        href="/programs"
+                        className="text-sm font-semibold leading-6 text-primary"
+                      >
+                        Learn more <span aria-hidden="true">→</span>
+                      </Link>
+                    </p>
                   </dd>
                 </div>
               ))}
@@ -132,19 +132,22 @@ export default function Home() {
                 Our Impact
               </h2>
               <p className="mt-4 text-lg leading-8 text-white/90">
-                Making a difference in the lives of students across Chennai
+                Transforming lives and communities through education.
               </p>
             </div>
             <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-3">
               {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col bg-white/5 p-8 transition-transform transform hover:scale-105">
-                <dt className="text-sm font-semibold leading-6 text-white/90">
-                {stat.name}
-                </dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-white">
-                <NumberTicker value={stat.value} />
-                </dd>
-              </div>
+                <div
+                  key={stat.id}
+                  className="flex flex-col bg-white/5 p-8 transition-transform transform hover:scale-105"
+                >
+                  <dt className="text-sm font-semibold leading-6 text-white/90">
+                    {stat.name}
+                  </dt>
+                  <dd className="order-first text-3xl font-semibold tracking-tight text-white">
+                    <NumberTicker value={stat.value} />
+                  </dd>
+                </div>
               ))}
             </dl>
           </div>

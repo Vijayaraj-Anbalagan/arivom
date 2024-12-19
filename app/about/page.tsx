@@ -52,10 +52,10 @@ export default function AboutPage() {
             Who We Are
           </h1>
           <p className="mt-6 max-w-xl text-xl leading-8 text-gray-300">
-            Founded in 2020, Arivom Educational Trust is dedicated to transforming
-            lives through education in Chennai. We believe that every child
-            deserves access to quality education, regardless of their economic
-            background.
+            Established in 2015, Ganga Shanmuga Social and Educational Trust is
+            committed to transforming lives through education in Tamil Nadu. We believe
+            every child deserves access to quality education, regardless of their
+            economic background.
           </p>
         </div>
       </section>
@@ -68,10 +68,10 @@ export default function AboutPage() {
               Our Mission & Vision
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We envision a society where education is truly a fundamental right,
-              fostering a brighter and more equitable future for all. Our mission
-              is to provide accessible, quality education that empowers
-              underprivileged communities to achieve their dreams.
+              We envision a society where education is a fundamental right,
+              fostering a brighter and equitable future for all. Our mission is to
+              provide accessible, quality education that empowers underprivileged
+              communities to achieve their dreams.
             </p>
           </div>
         </div>
@@ -91,11 +91,14 @@ export default function AboutPage() {
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-5">
-                {values.map((value) => (
-                <div key={value.title} className="transition-transform transform hover:scale-105">
+              {values.map((value) => (
+                <div
+                  key={value.title}
+                  className="transition-transform transform hover:scale-105"
+                >
                   <ValueCard {...value} />
                 </div>
-                ))}
+              ))}
             </dl>
           </div>
         </div>
@@ -120,7 +123,7 @@ export default function AboutPage() {
               <figure className="mx-auto max-w-2xl">
                 <blockquote className="text-center text-lg font-semibold leading-8 text-gray-900">
                   <p>
-                    "Thanks to Arivom's scholarship program, I was able to continue
+                    "With the Trust's scholarship program, I was able to continue
                     my education and become the first graduate in my family. Today,
                     I'm working as a software engineer and supporting my siblings'
                     education."
@@ -135,9 +138,7 @@ export default function AboutPage() {
                     height={64}
                   />
                   <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                    <div className="font-semibold text-gray-900">
-                      Priya Lakshmi
-                    </div>
+                    <div className="font-semibold text-gray-900">Priya Lakshmi</div>
                     <svg
                       viewBox="0 0 2 2"
                       width={3}

@@ -38,7 +38,7 @@ export function Footer() {
           ))}
         </nav>
         <div className="mt-10 flex justify-center space-x-10">
-            {socialLinks.map((item) => (
+          {socialLinks.map((item) => (
             <Link
               key={item.name}
               href={item.href}
@@ -47,15 +47,15 @@ export function Footer() {
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </Link>
-            ))}
+          ))}
         </div>
 
         <div className="mt-16 text-center">
-        <p className="text-gray-400 text-sm">Made with ❤ by</p>
-        <SparklesText text="SocialSync" className="text-4xl mt-2" />
-      </div>
+          <p className="text-gray-400 text-sm">Made with ❤ by</p>
+          <SparklesText text="SocialSync" className="text-4xl mt-2" />
+        </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; {new Date().getFullYear()} Arivom Educational Trust. All rights
+          &copy; {new Date().getFullYear()} Ganga Shanmuga Social and Educational Trust. All rights
           reserved.
         </p>
       </div>

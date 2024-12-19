@@ -20,7 +20,7 @@ export function ContactForm() {
 
     toast({
       title: "Message sent!",
-      description: "Thank you for reaching out! We'll get back to you soon.",
+      description: "Thank you for reaching out! We’ll get back to you soon.",
     });
 
     setIsSubmitting(false);
@@ -32,17 +32,18 @@ export function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-8">
         <div className="space-y-2">
           <h2 className="font-poppins text-2xl font-bold tracking-tight text-gray-900">
-            Send Us a Message
+            Reach Out to Us
           </h2>
           <p className="text-base text-gray-600">
-            Fill out the form below and we'll get back to you as soon as possible.
+            Fill out the form below, and a member of the Ganga Shanmuga Social
+            and Educational Trust team will respond as soon as possible.
           </p>
         </div>
 
         <div className="space-y-6">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="space-y-2">
-              <Label htmlFor="firstName">First name</Label>
+              <Label htmlFor="firstName">First Name</Label>
               <Input
                 id="firstName"
                 name="firstName"
@@ -52,7 +53,7 @@ export function ContactForm() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="lastName">Last name</Label>
+              <Label htmlFor="lastName">Last Name</Label>
               <Input
                 id="lastName"
                 name="lastName"
@@ -76,7 +77,7 @@ export function ContactForm() {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="phone">Phone (optional)</Label>
+            <Label htmlFor="phone">Phone (Optional)</Label>
             <Input
               id="phone"
               name="phone"
@@ -93,7 +94,7 @@ export function ContactForm() {
               name="message"
               required
               className="min-h-[150px] w-full resize-none"
-              placeholder="How can we help you?"
+              placeholder="How can we assist you?"
             />
           </div>
 

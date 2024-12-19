@@ -84,10 +84,11 @@ export default function GalleryPage() {
             Our Journey in Pictures
           </h1>
           <p className="mt-6 max-w-xl text-xl leading-8 text-gray-300">
-            Experience the impact of Arivom Educational Trust through visual
-            stories—from educational workshops to community events and inspiring
-            success stories.
-          </p>
+  Experience the impact of Ganga Shanmuga Social and Educational Trust through visual
+  stories—from educational workshops to community events and inspiring
+  success stories.
+</p>
+
         </div>
       </section>
 

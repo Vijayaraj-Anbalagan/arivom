@@ -23,8 +23,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-6 max-w-xl text-xl leading-8 text-gray-300">
             Whether you're interested in volunteering, supporting our initiatives,
-            or just learning more about Arivom Educational Trust, we're here to
-            help.
+            or learning more about Ganga Shanmuga Social and Educational Trust, we're here to help.
           </p>
         </div>
       </section>

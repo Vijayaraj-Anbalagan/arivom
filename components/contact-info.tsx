@@ -36,11 +36,11 @@ export function ContactInfo() {
           <div>
             <p className="font-semibold text-gray-900">Visit Us</p>
             <p className="mt-1 text-gray-600">
-              123 Knowledge Avenue
+              A/15, Housing Board
               <br />
-              Chennai, Tamil Nadu 600001
+              Sattur, Virudhunagar District
               <br />
-              India
+              Tamil Nadu 626203, India
             </p>
           </div>
         </div>
@@ -51,7 +51,8 @@ export function ContactInfo() {
           </div>
           <div>
             <p className="font-semibold text-gray-900">Call Us</p>
-            <p className="mt-1 text-gray-600">+91 9876543210</p>
+            <p className="mt-1 text-gray-600">+91 9443454172</p>
+            <p className="mt-1 text-gray-600">+91 8667664902</p>
           </div>
         </div>
 
@@ -61,7 +62,7 @@ export function ContactInfo() {
           </div>
           <div>
             <p className="font-semibold text-gray-900">Email Us</p>
-            <p className="mt-1 text-gray-600">contact@arivomtrust.org</p>
+            <p className="mt-1 text-gray-600">info@gangashanmugatrust.org</p>
           </div>
         </div>
       </div>

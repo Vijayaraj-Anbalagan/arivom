@@ -3,27 +3,27 @@ import { Linkedin } from "lucide-react";
 
 const team = [
   {
-    name: "Dr. Rajesh Kumar",
+    name: "Dr. R. Vijayakumar",
     role: "Founder & Chairman",
     imageUrl:
       "https://static9.depositphotos.com/1005893/1105/i/450/depositphotos_11050974-stock-photo-indian-businessman.jpg",
-    bio: "Educational visionary with 20+ years of experience in academia.",
+    bio: "Visionary leader with a mission to transform communities through education and empowerment.",
     linkedin: "#",
   },
   {
-    name: "Priya Sharma",
-    role: "Program Director",
+    name: "Anitha Rajendran",
+    role: "Director of Education",
     imageUrl:
       "https://t3.ftcdn.net/jpg/06/60/16/72/360_F_660167287_gzYr2ejTMDX1dCyj96YNFb7FiwJZPrvK.jpg",
-    bio: "Passionate about creating impactful educational programs.",
+    bio: "Dedicated to designing impactful educational programs for underprivileged children.",
     linkedin: "#",
   },
   {
-    name: "Arun Prakash",
-    role: "Community Outreach",
+    name: "Ravi Shankar",
+    role: "Head of Community Outreach",
     imageUrl:
       "https://media.istockphoto.com/id/1363118407/photo/portrait-of-young-businessman.jpg?s=612x612&w=0&k=20&c=e9xjo1AdlIbr7ttZe3iBG3CBWKUBwdTMLkPus9DxA_s=",
-    bio: "Building bridges between communities and educational opportunities.",
+    bio: "Fostering strong connections between communities and the Trust's initiatives.",
     linkedin: "#",
   },
 ];
@@ -37,7 +37,7 @@ export function TeamGrid() {
             Meet Our Team
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Dedicated professionals working towards educational excellence.
+            The passionate individuals driving the mission of Ganga Shanmuga Social and Educational Trust.
           </p>
         </div>
         <ul
@@ -49,10 +49,10 @@ export function TeamGrid() {
               <div className="group relative">
                 <div className="relative h-48 w-48 mx-auto overflow-hidden rounded-full bg-gray-100 group-hover:scale-105 transition-transform duration-300">
                   <Image
-                  className="object-cover"
-                  src={person.imageUrl}
-                  alt={person.name}
-                  fill
+                    className="object-cover"
+                    src={person.imageUrl}
+                    alt={person.name}
+                    fill
                   />
                 </div>
                 <div className="mt-6 text-center">
