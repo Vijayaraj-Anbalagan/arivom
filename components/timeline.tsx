@@ -22,7 +22,7 @@ const timeline = [
   {
     name: "Free Education Initiative",
     description:
-      "Began providing free education, food, and uniforms to underprivileged children in Sattur, Virudhunagar.",
+      "Began providing free education, food, and uniforms to children in Sattur, Virudhunagar.",
     date: "2018",
   },
   {

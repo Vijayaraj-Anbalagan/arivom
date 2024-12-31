@@ -22,25 +22,26 @@ const bankDetails: BankDetail[] = [
   },
   {
     label: "Account Number",
-    value: "1234567890",
+    value: "915020047965042",
     copyable: true
   },
   {
     label: "IFSC Code",
-    value: "ABCD0123456",
+    value: "UTIB0002760",
     copyable: true
   },
   {
-    label: "Branch Name",
-    value: "Main Branch"
+    label: "MICR Code",
+    value: "626211402",
+    copyable: true
   },
   {
     label: "Bank Name",
-    value: "State Bank of India"
+    value: "Axis Bank",
   },
   {
     label: "Account Type",
-    value: "Savings Account"
+    value: "Current Account"
   }
 ];
 

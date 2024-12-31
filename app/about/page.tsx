@@ -86,13 +86,12 @@ export default function AboutPage() {
             </p>
           </div>
             <div className="text-center max-w-2xl mx-auto">
-            <div className="relative w-full h-48 mx-auto mb-6 sm:h-64">
+            <div className="relative w-full h-60 mx-auto mb-6 sm:h-64">
               <Image
               src="/founder.png"
               alt="Founder"
               fill
               className="border-4 border-primary/20 object-cover"
-              sizes="(max-width: 640px) 100vw, 100vw"
               />
             </div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-2">
@@ -119,7 +118,7 @@ export default function AboutPage() {
               We envision a society where education is a fundamental right,
               fostering a brighter and equitable future for all. Following our motto
               "Life is to serve Humanity", our mission is to provide accessible,
-              quality education that empowers underprivileged communities to achieve
+              quality education that empowers communities to achieve
               their dreams.
             </p>
           </div>

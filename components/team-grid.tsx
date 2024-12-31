@@ -3,27 +3,11 @@ import { Linkedin } from "lucide-react";
 
 const team = [
   {
-    name: "Dr. R. Vijayakumar",
+    name: "Dr. Vijayraja K",
     role: "Founder & Chairman",
     imageUrl:
       "/Vijayaraja.png",
     bio: "Visionary leader with a mission to transform communities through education and empowerment.",
-    linkedin: "#",
-  },
-  {
-    name: "Anitha Rajendran",
-    role: "Director of Education",
-    imageUrl:
-      "https://t3.ftcdn.net/jpg/06/60/16/72/360_F_660167287_gzYr2ejTMDX1dCyj96YNFb7FiwJZPrvK.jpg",
-    bio: "Dedicated to designing impactful educational programs for underprivileged children.",
-    linkedin: "#",
-  },
-  {
-    name: "Ravi Shankar",
-    role: "Head of Community Outreach",
-    imageUrl:
-      "https://media.istockphoto.com/id/1363118407/photo/portrait-of-young-businessman.jpg?s=612x612&w=0&k=20&c=e9xjo1AdlIbr7ttZe3iBG3CBWKUBwdTMLkPus9DxA_s=",
-    bio: "Fostering strong connections between communities and the Trust's initiatives.",
     linkedin: "#",
   },
 ];
@@ -42,7 +26,7 @@ export function TeamGrid() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-1 justify-center"
         >
           {team.map((person) => (
             <li key={person.name}>

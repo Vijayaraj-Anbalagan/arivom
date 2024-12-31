@@ -58,7 +58,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Join hands with Ganga Shanmuga Social and Educational Trust to
-              create a brighter future for underprivileged children.
+              create a brighter future for children.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button
@@ -161,12 +161,12 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {/* Placeholder for dynamic news/events content */}
+            {/* Event 1 */}
             <article className="flex flex-col items-start">
               <div className="relative w-full image-wrapper shine">
                 <Image
-                  src="https://www.thepresidiumschool.com/news_image/5001%20(14).jpg"
-                  alt="Students studying"
+                  src="https://res.cloudinary.com/drbgsqthk/image/upload/v1735669497/use_filename-40.jpg"
+                  alt="Audience gathering for event"
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                   width={800}
                   height={400}
@@ -174,8 +174,72 @@ export default function Home() {
               </div>
               <div className="max-w-xl">
                 <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <time dateTime="2024-03-16" className="text-gray-500">
-                    Mar 16, 2024
+                  <time dateTime="2024-01-10" className="text-gray-500">
+                    Jan 10, 2024
+                  </time>
+                  <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                    Past Event
+                  </span>
+                </div>
+                <div className="group relative">
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    <span className="absolute inset-0" />
+                    Scholarship Distribution Ceremony
+                  </h3>
+                  <p className="mt-5 text-sm leading-6 text-gray-600">
+                    Recognizing students' achievements with scholarship awards for their dedication and performance.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            {/* Event 2 */}
+            <article className="flex flex-col items-start">
+              <div className="relative w-full image-wrapper shine">
+                <Image
+                  src="https://res.cloudinary.com/drbgsqthk/image/upload/v1735669489/use_filename-24.jpg"
+                  alt="School event with children"
+                  className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                  width={800}
+                  height={400}
+                />
+              </div>
+              <div className="max-w-xl">
+                <div className="mt-8 flex items-center gap-x-4 text-xs">
+                  <time dateTime="2024-01-15" className="text-gray-500">
+                    Jan 15, 2024
+                  </time>
+                  <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                    Past Event
+                  </span>
+                </div>
+                <div className="group relative">
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    <span className="absolute inset-0" />
+                    Book Distribution Drive
+                  </h3>
+                  <p className="mt-5 text-sm leading-6 text-gray-600">
+                    A community-driven event to distribute educational resources to school children in need.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            {/* Event 3 */}
+            <article className="flex flex-col items-start">
+              <div className="relative w-full image-wrapper shine">
+                <Image
+                  src="https://res.cloudinary.com/drbgsqthk/image/upload/v1735669486/use_filename-3.jpg"
+                  alt="Food distribution event"
+                  className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                  width={800}
+                  height={400}
+                />
+              </div>
+              <div className="max-w-xl">
+                <div className="mt-8 flex items-center gap-x-4 text-xs">
+                  <time dateTime="2024-01-20" className="text-gray-500">
+                    Jan 20, 2024
                   </time>
                   <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
                     Upcoming Event
@@ -184,78 +248,14 @@ export default function Home() {
                 <div className="group relative">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                     <span className="absolute inset-0" />
-                    Annual Scholarship Distribution Ceremony
+                    Food Distribution Drive
                   </h3>
                   <p className="mt-5 text-sm leading-6 text-gray-600">
-                    Join us for our annual scholarship distribution ceremony where
-                    we celebrate the achievements of our students.
+                    Join us in our initiative to provide meals to the at the orphanage.
                   </p>
                 </div>
               </div>
             </article>
-            <article className="flex flex-col items-start">
-              <div className="relative w-full image-wrapper shine">
-                <Image
-                  src="https://thenest.school/wp-content/uploads/2023/11/IMG-20231110-WA0055-e1699702424521.jpg"
-                  alt="Students at a workshop"
-                  className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-                  width={800}
-                  height={400}
-                />
-              </div>
-              <div className="max-w-xl">
-                <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <time dateTime="2024-02-28" className="text-gray-500">
-                    Feb 28, 2024
-                  </time>
-                  <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                    Past Event
-                  </span>
-                </div>
-                <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <span className="absolute inset-0" />
-                    Digital Literacy Workshop
-                  </h3>
-                  <p className="mt-5 text-sm leading-6 text-gray-600">
-                    Our digital literacy workshop helped students learn essential
-                    computer skills for the modern world.
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article className="flex flex-col items-start">
-              <div className="relative w-full image-wrapper shine">
-                <Image
-                  src="https://www.artindiafoundation.org/images/ka-165.webp"
-                  alt="Students at a workshop"
-                  className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-                  width={800}
-                  height={400}
-                />
-              </div>
-              <div className="max-w-xl">
-                <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <time dateTime="2024-02-15" className="text-gray-500">
-                    Feb 15, 2024
-                  </time>
-                  <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                    Past Event
-                  </span>
-                </div>
-                <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <span className="absolute inset-0" />
-                    Community Tutoring Program
-                  </h3>
-                  <p className="mt-5 text-sm leading-6 text-gray-600">
-                    Our community tutoring program helped students excel in their
-                    academic pursuits.
-                  </p>
-                </div>
-              </div>
-            </article>
-
           </div>
         </div>
       </section>
@@ -268,7 +268,7 @@ export default function Home() {
               Make a Difference Today
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-              Your support can help transform the lives of underprivileged students.
+              Your support can help transform the lives of students.
               Join us in our mission to make quality education accessible to all.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">

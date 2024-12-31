@@ -16,7 +16,7 @@ export function GetInvolved() {
               </h3>
             </div>
             <p className="mt-4 text-gray-600">
-              Share your time and skills to support underprivileged children. Join
+              Share your time and skills to support children. Join
               our dedicated team to teach, mentor, or assist in organizing
               educational events. Together, we can empower communities.
             </p>

@@ -5,38 +5,57 @@ import { ProgramCard } from "@/components/program-card";
 import { ArrowRight, GraduationCap, Users, Monitor, BookOpen } from "lucide-react";
 import { DonationDialog } from "@/components/DonationDialog";
 
-const programs = [
-  {
-    title: "Scholarship Program",
-    description: "Providing financial assistance to underprivileged students for school and higher education.",
-    impact: "100+ scholarships awarded",
-    icon: GraduationCap,
-    image: "https://media.istockphoto.com/id/1461631902/photo/group-of-college-students-discussing-about-project-with-team-leader-from-laptop-at-college.jpg?s=612x612&w=0&k=20&c=6KPm5e4SPQ2r0iHWOU0ujPn3bdCy60QfULFNCeSpEbs=",
-  },
-  {
-    title: "Community Tutoring",
-    description: "Free evening classes aimed at improving academic performance and confidence among children.",
-    impact: "300+ children enrolled",
-    icon: Users,
-    image: "https://c9.shauryasoft.com/media/bny-wcp-2411131007-0812187636-3.jpg",
-  },
-  {
-    title: "Digital Literacy",
-    description: "Workshops on basic computer literacy and digital tools for students and adults.",
-    impact: "20+ workshops annually",
-    icon: Monitor,
-    image: "https://theunitedindian.com/images/DE.jpg",
-  },
-  {
-    title: "Youth Skill Development",
-    description: "Vocational training programs to equip young adults with job-oriented skills.",
-    impact: "50+ job placements",
-    icon: BookOpen,
-    image: "https://srdsindia.org/wp-content/uploads/2021/09/teaching.jpeg",
-  },
-];
+
 
 export default function ProgramsPage() {
+  
+  const programs = [
+    {
+      title: "School Book Distribution",
+      description: "Empowering young students with educational resources such as the revered Thirukural to aid in their academic growth.",
+      impact: "200+ Thirukural books distributed",
+      icon: BookOpen,
+      image: "https://res.cloudinary.com/drbgsqthk/image/upload/v1735669489/use_filename-24.jpg",
+    },
+    {
+      title: "Shelter Support for Needy Families",
+      description: "Providing protective sheets and materials to cover huts during rainy and summer seasons.",
+      impact: "10+ families supported",
+      icon: Users,
+      image: "https://res.cloudinary.com/drbgsqthk/image/upload/v1735669487/use_filename-12.jpg",
+    },
+    {
+      title: "Provision Distribution for Needy Homes",
+      description: "Delivering essential provisions to homes and communities in need to ensure basic needs are met.",
+      impact: "100+ homes supported",
+      icon: Monitor,
+      image: "https://res.cloudinary.com/drbgsqthk/image/upload/v1735669487/use_filename-10.jpg",
+    },
+    {
+      title: "Support for Old Age Homes",
+      description: "Providing food and essentials to elderly residents in old age homes to improve their living conditions.",
+      impact: "50+ elderly beneficiaries",
+      icon: GraduationCap,
+      image: "https://res.cloudinary.com/drbgsqthk/image/upload/v1735669486/use_filename-9.jpg",
+    },
+    {
+      title: "Marriage Ceremonies for Couples",
+      description: "Supporting the marriage of couples by offering necessary arrangements and support.",
+      impact: "5+ ceremonies organized",
+      icon: Users,
+      image: "https://res.cloudinary.com/drbgsqthk/image/upload/v1735669489/use_filename-28.jpg",
+    },
+    {
+      title: "Social and Educational Support",
+      description: "Providing educational support and resources to students to help them succeed.",
+      impact: "100+ students supported",
+      icon: BookOpen,
+      image: "https://res.cloudinary.com/drbgsqthk/image/upload/v1735669489/use_filename-25.jpg",
+
+    }
+  ];
+  
+  
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -93,7 +112,7 @@ export default function ProgramsPage() {
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
             <div className="relative lg:order-2">
               <Image
-                src="https://img.freepik.com/free-photo/handsome-young-indian-student-man-holding-notebooks-while-standing-street_231208-2773.jpg?t=st=1732690743~exp=1732694343~hmac=0235290ee8344ec6208681bbff28eeb64de44be26f4b5d944b91c6113622d828&w=996"
+                src="https://res.cloudinary.com/drbgsqthk/image/upload/v1735669489/use_filename-25.jpg"
                 alt="Scholarship recipients"
                 width={800}
                 height={600}
