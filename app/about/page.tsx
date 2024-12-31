@@ -86,12 +86,13 @@ export default function AboutPage() {
             </p>
           </div>
             <div className="text-center max-w-2xl mx-auto">
-            <div className="relative w-full h-96 mx-auto mb-6">
+            <div className="relative w-full h-48 mx-auto mb-6 sm:h-64">
               <Image
               src="/founder.png"
               alt="Founder"
               fill
               className="border-4 border-primary/20 object-cover"
+              sizes="(max-width: 640px) 100vw, 100vw"
               />
             </div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-2">
