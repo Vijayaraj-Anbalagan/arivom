@@ -6,7 +6,7 @@ const team = [
     name: "Dr. R. Vijayakumar",
     role: "Founder & Chairman",
     imageUrl:
-      "https://static9.depositphotos.com/1005893/1105/i/450/depositphotos_11050974-stock-photo-indian-businessman.jpg",
+      "/Vijayaraja.png",
     bio: "Visionary leader with a mission to transform communities through education and empowerment.",
     linkedin: "#",
   },

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ProgramCard } from "@/components/program-card";
 import { ArrowRight, GraduationCap, Users, Monitor, BookOpen } from "lucide-react";
+import { DonationDialog } from "@/components/DonationDialog";
 
 const programs = [
   {
@@ -147,15 +148,7 @@ export default function ProgramsPage() {
               Support our programs or volunteer your time to help us make education accessible to all.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-6">
-              <Button
-                size="lg"
-                className="bg-secondary text-white hover:bg-secondary/90"
-                asChild
-              >
-                <Link href="/donate">
-                  Donate Now <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+            <DonationDialog />
               <Button
                 size="lg"
                 variant="outline"

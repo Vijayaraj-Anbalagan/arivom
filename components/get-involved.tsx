@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Users } from "lucide-react";
+import { DonationDialog } from "./DonationDialog";
 
 export function GetInvolved() {
   return (
@@ -42,14 +43,7 @@ export function GetInvolved() {
               difference.
             </p>
             <div className="mt-8">
-              <Button
-                className="bg-secondary hover:bg-secondary/90"
-                asChild
-              >
-                <Link href="#">
-                  Donate Now <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+            <DonationDialog />
             </div>
           </div>
         </div>

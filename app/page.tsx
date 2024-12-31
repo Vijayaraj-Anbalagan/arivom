@@ -9,6 +9,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import NumberTicker from "@/components/ui/number-ticker";
+import { DonationDialog } from "@/components/DonationDialog";
 
 const programs = [
   {
@@ -46,6 +47,7 @@ const stats = [
 export default function Home() {
   return (
     <div className="flex flex-col">
+      
       {/* Hero Section */}
       <section className="hero-pattern relative py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -66,14 +68,7 @@ export default function Home() {
               >
                 <Link href="/about">Learn More</Link>
               </Button>
-              <Button
-                size="lg"
-                variant="secondary"
-                className="bg-secondary text-white hover:bg-secondary/90 transition-transform transform hover:scale-105"
-                asChild
-              >
-                <Link href="/contact">Donate Now</Link>
-              </Button>
+              <DonationDialog />
             </div>
           </div>
         </div>

@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { DonationDialog } from "./DonationDialog";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -22,8 +24,17 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <span className="font-poppins text-2xl font-bold text-primary">
+            <Link href="/" className="flex items-center space-x-3">
+              <div className="relative h-10 w-10">
+                <Image
+                  src="/logo.png"
+                  alt="Trust Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <span className="font-poppins text-xl font-bold text-primary">
                 Ganga Shanmuga
               </span>
             </Link>
@@ -41,9 +52,7 @@ export function Navbar() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-secondary hover:bg-secondary/90">
-                Donate Now
-              </Button>
+              <DonationDialog />
             </div>
           </div>
           <div className="flex md:hidden">
@@ -64,7 +73,13 @@ export function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
+      <div 
+        className={cn(
+          "md:hidden",
+          "transition-all duration-300 ease-in-out",
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+        )}
+      >
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <Link
@@ -77,9 +92,7 @@ export function Navbar() {
             </Link>
           ))}
           <div className="px-3 py-2">
-            <Button className="w-full bg-secondary hover:bg-secondary/90">
-              Donate Now
-            </Button>
+          <DonationDialog />
           </div>
         </div>
       </div>
