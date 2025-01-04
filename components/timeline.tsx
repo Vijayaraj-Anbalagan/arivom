@@ -14,9 +14,9 @@ const timeline = [
     date: "2016",
   },
   {
-    name: "Partnership with Aathichudi International School",
+    name: "Partnership with Schools",
     description:
-      "Collaborated with Aathichudi International School to expand educational initiatives.",
+      "Collaborated with a School to expand educational initiatives.",
     date: "2017",
   },
   {

@@ -239,7 +239,7 @@ export default function Home() {
               <div className="max-w-xl">
                 <div className="mt-8 flex items-center gap-x-4 text-xs">
                   <time dateTime="2024-01-20" className="text-gray-500">
-                    Jan 20, 2024
+                    Jan 20, 2025
                   </time>
                   <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
                     Upcoming Event

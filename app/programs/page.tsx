@@ -128,7 +128,7 @@ export default function ProgramsPage() {
                   "With the Trust's scholarship, I achieved my dream of becoming an engineer. This program changed my life forever."
                 </p>
                 <footer className="mt-4 text-sm font-semibold">
-                  - Rekha S., Scholarship Recipient
+                  - Scholarship Recipient
                 </footer>
               </blockquote>
               <ul className="mt-12 space-y-4">

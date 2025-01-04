@@ -65,7 +65,7 @@ export default function AboutPage() {
             Who We Are
           </h1>
           <p className="mt-6 max-w-xl text-xl leading-8 text-gray-300">
-            Established in 2015, Ganga Shanmuga Social and Educational Trust is
+            Established in 2015, Ganga Shanmuga Social and Educational Trust (Reg No : 17/4 2015) is
             committed to transforming lives through education in Tamil Nadu. We believe
             every child deserves access to quality education, regardless of their
             economic background.
@@ -95,7 +95,7 @@ export default function AboutPage() {
               />
             </div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-              Founder's Name
+             திரு.கெங்கையா திருமதி. கெ.சண்முகத்தாய்
             </h3>
             <p className="text-lg text-gray-600">1945 - 2014</p>
             <p className="mt-4 text-lg text-gray-600">
@@ -158,54 +158,6 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <TeamGrid />
-
-      {/* Impact Stories Section */}
-      <section className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <p className="text-primary font-semibold mb-4">Our Impact</p>
-            <h2 className="font-poppins text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Stories That Inspire
-            </h2>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <div className="relative overflow-hidden rounded-xl bg-primary/5 px-6 py-12 shadow-sm ring-1 ring-primary/10 sm:px-12">
-              <figure className="mx-auto max-w-2xl">
-                <blockquote className="text-center text-lg font-semibold leading-8 text-gray-900">
-                  <p>
-                    "With the Trust's scholarship program, I was able to continue
-                    my education and become the first graduate in my family. Today,
-                    I'm working as a software engineer and supporting my siblings'
-                    education."
-                  </p>
-                </blockquote>
-                <figcaption className="mt-10">
-                  <Image
-                    className="mx-auto h-20 w-20 rounded-full"
-                    src="https://media.istockphoto.com/id/1029797636/photo/school-girl-stock-image.jpg?s=612x612&w=0&k=20&c=vTO9wMeghrSTzTrKNvv_vBmjF7yJMMPA-coFg3bab2w="
-                    alt="Student portrait"
-                    width={64}
-                    height={64}
-                  />
-                  <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                    <div className="font-semibold text-gray-900">Priya Lakshmi</div>
-                    <svg
-                      viewBox="0 0 2 2"
-                      width={3}
-                      height={3}
-                      aria-hidden="true"
-                      className="fill-gray-900"
-                    >
-                      <circle cx={1} cy={1} r={1} />
-                    </svg>
-                    <div className="text-gray-600">Alumni, 2022</div>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="bg-primary/10 py-16 sm:py-24">
