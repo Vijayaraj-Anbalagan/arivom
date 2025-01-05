@@ -125,10 +125,6 @@ const batchInput: BatchInput[] = [
         title: "Shelter Support for Needy Families",
         description: "Providing protective materials for huts in rainy seasons."
       },
-      11: {
-        title: "Community Tutoring Program",
-        description: "Helping students excel in their academic pursuits."
-      }
     }
   },
   {
@@ -234,18 +230,18 @@ export default function GalleryPage() {
               className="w-full"
               onValueChange={setActiveCategory}
             >
-              <TabsList className="grid w-full grid-cols-4">
+                <TabsList className="flex flex-wrap justify-center gap-2 sm:gap-4">
                 {categories.map((category) => (
                   <TabsTrigger
-                    key={category.id}
-                    value={category.id}
-                    className="font-poppins"
+                  key={category.id}
+                  value={category.id}
+                  className="font-poppins px-4 py-2 rounded-md transition-colors duration-200 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                   >
-                    {category.label}
+                  {category.label}
                   </TabsTrigger>
                 ))}
-              </TabsList>
-              <TabsContent value={activeCategory} className="mt-8">
+                </TabsList>
+              <TabsContent value={activeCategory} className="mt-24 sm:mt-8">
                 <GalleryGrid items={filteredItems} />
               </TabsContent>
             </Tabs>
