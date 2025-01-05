@@ -60,6 +60,9 @@ export default function AboutPage() {
             <h2 className="text-2xl font-medium text-white italic">
               "Life is to serve Humanity"
             </h2>
+            <Link href="/trust.pdf" target="_blank" className="text-sm text-gray-300 underline mt-2">
+              View registration documents
+            </Link>
           </div>
           <h1 className="font-poppins text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Who We Are
