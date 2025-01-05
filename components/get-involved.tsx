@@ -22,7 +22,7 @@ export function GetInvolved() {
             </p>
             <div className="mt-8">
               <Button asChild>
-                <Link href="#">
+                <Link href="tel:+919443454172">
                   Join as Volunteer <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
