@@ -5,6 +5,8 @@ import { Footer } from '@/components/footer';
 import { ThemeProvider } from '@/components/theme-provider';
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
+import Head from 'next/head';
+
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -35,6 +37,23 @@ export const metadata = {
   description: 'Empowering Communities Through Education and Transforming Lives',
 };
 
+const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ganga Shanmuga Social and Educational Trust",
+    "url": "https://www.gangashanmugatrust.org/",
+    "logo": "https://www.gangashanmugatrust.org/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-1234567890",
+      "contactType": "Customer Service"
+    },
+    "sameAs": [
+      "https://www.facebook.com/gangashanmugatrust",
+      "https://www.twitter.com/gangashanmugatrust",
+      "https://www.instagram.com/gangashanmugatrust"
+    ]
+  };
 
 export default function RootLayout({
   children,
@@ -43,6 +62,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+     <Head>
+      <title>Ganga Shanmuga Social and Educational Trust</title>
+      <meta name="description" content="Empowering communities through education and social initiatives." />
+      <meta name="keywords" content="education, social trust, community development, Ganga Shanmuga" />
+      <meta property="og:title" content="Ganga Shanmuga Social and Educational Trust" />
+      <meta property="og:description" content="Empowering communities through education and social initiatives." />
+      <meta property="og:url" content="https://www.gangashanmugatrust.org/" />
+      <meta property="og:image" content="https://www.gangashanmugatrust.org/og-image.jpg" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Ganga Shanmuga Social and Educational Trust" />
+      <meta name="twitter:description" content="Empowering communities through education and social initiatives." />
+      <meta name="twitter:image" content="https://www.gangashanmugatrust.org/twitter-image.jpg" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+    </Head>
       <body className={`${poppins.variable} ${notoSerifTamil.variable} font-sans`}>
         <ThemeProvider
           attribute="class"
