@@ -62,7 +62,7 @@ export function ContactInfo() {
           </div>
           <div>
             <p className="font-semibold text-gray-900">Email Us</p>
-            <p className="mt-1 text-gray-600">info@gangashanmugatrust.org</p>
+            <p className="mt-1 text-gray-600">info.gangashanmugatrust@gmail.com</p>
           </div>
         </div>
       </div>
