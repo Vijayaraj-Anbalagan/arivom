@@ -165,7 +165,7 @@ export default function Home() {
             <article className="flex flex-col items-start">
               <div className="relative w-full image-wrapper shine">
                 <Image
-                  src="https://res.cloudinary.com/drbgsqthk/image/upload/v1735669497/use_filename-40.jpg"
+                  src="https://res.cloudinary.com/drbgsqthk/image/upload/v1741633881/image18.jpg"
                   alt="Audience gathering for event"
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                   width={800}
@@ -197,7 +197,7 @@ export default function Home() {
             <article className="flex flex-col items-start">
               <div className="relative w-full image-wrapper shine">
                 <Image
-                  src="https://res.cloudinary.com/drbgsqthk/image/upload/v1735669489/use_filename-24.jpg"
+                  src="https://res.cloudinary.com/drbgsqthk/image/upload/v1741633881/image24.jpg"
                   alt="School event with children"
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                   width={800}
@@ -229,7 +229,7 @@ export default function Home() {
             <article className="flex flex-col items-start">
               <div className="relative w-full image-wrapper shine">
                 <Image
-                  src="https://res.cloudinary.com/drbgsqthk/image/upload/v1735669486/use_filename-3.jpg"
+                  src="https://res.cloudinary.com/drbgsqthk/image/upload/v1741633881/image38.jpg"
                   alt="Food distribution event"
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                   width={800}
@@ -238,20 +238,20 @@ export default function Home() {
               </div>
               <div className="max-w-xl">
                 <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <time dateTime="2024-01-20" className="text-gray-500">
-                    Jan 20, 2025
+                  <time dateTime="2025-03-01" className="text-gray-500">
+                    March 1, 2025
                   </time>
                   <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                    Upcoming Event
+                    Recent Event
                   </span>
                 </div>
                 <div className="group relative">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                     <span className="absolute inset-0" />
-                    Food Distribution Drive
+                    Mr. Gangaiya's Anniversary Memorial
                   </h3>
                   <p className="mt-5 text-sm leading-6 text-gray-600">
-                    Join us in our initiative to provide meals to the at the orphanage.
+                    In memory of Mr. Gangaiya, we organized a food distribution event at Pachayammal Trust old age home
                   </p>
                 </div>
               </div>

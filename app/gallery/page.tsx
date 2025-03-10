@@ -77,7 +77,7 @@ const categoryDefaults = {
 const batchInput: BatchInput[] = [
   { 
     category: "events",
-    imageNumbers: [41, 42, 44, 22, 20, 17, 24],
+    imageNumbers: [ 22, 20, 17, 24],
     customItems: {
       42: {
         title: "Interactive Learning Workshop",
@@ -87,11 +87,11 @@ const batchInput: BatchInput[] = [
   },
   {
     category: "community-events",
-    imageNumbers: [39, 40, 35, 36, 33, 30, 26, 27, 25]
+    imageNumbers: [13, 18 ,25, 26, 27, 32 ,  33 ,40, 35, 36, 33, 30, 26, 27, 25]
   },
   {
     category: "book-distribution",
-    imageNumbers: [45, 43, 37, 38, 32, 18, 19, 23],
+    imageNumbers: [8, 9, 10 , 17 , 19 , 20 , 21, 22,23,24],
     customItems: {
       43: {
         title: "Thirukkural Book Distribution",
@@ -105,7 +105,7 @@ const batchInput: BatchInput[] = [
   },
   {
     category: "food-distribution",
-    imageNumbers: [ 2, 3, 4, 5, 7, 8, 9],
+    imageNumbers: [ 1, 2 ,3, 4, 5,6 ,7 , 15 , 29 , 31 , 35 , 36 , 37 , 38 , 39 , 40 , 41 , 42 , 43 , 44 , 45],
     customItems: {
       1: {
         title: "Food for Needy Families",
@@ -129,7 +129,7 @@ const batchInput: BatchInput[] = [
   },
   {
     category: "other",
-    imageNumbers: [14]
+    imageNumbers: [14 , 30 , 34]
   }
 ];
 
@@ -147,7 +147,7 @@ const generateGalleryItems = (batches: BatchInput[]) => {
         category,
         title: customItem?.title || categoryDefaults[category].title,
         description: customItem?.description || categoryDefaults[category].description,
-        image: `https://res.cloudinary.com/drbgsqthk/image/upload/v1735669497/use_filename-${imageNumber}.jpg`
+        image: `https://res.cloudinary.com/drbgsqthk/image/upload/v1741633881/image${imageNumber}.jpg`
       };
     })
   );
