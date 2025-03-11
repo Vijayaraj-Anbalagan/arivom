@@ -248,7 +248,7 @@ export default function Home() {
                 <div className="group relative">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                     <span className="absolute inset-0" />
-                    Mr. Gangaiya's Anniversary Memorial
+                    Thiru Kengaiah's Anniversary Memorial
                   </h3>
                   <p className="mt-5 text-sm leading-6 text-gray-600">
                     In memory of Mr. Gangaiya, we organized a food distribution event at Pachayammal Trust old age home
